@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <title>ヾ(≧▽≦*)o~</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Ma Shan Zheng", cursive;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: white;
+        }
+        header h1 {
+            font-family: "ZCOOL KuaiLe", sans-serif;
+            font-size: 380%;
+            font-weight: lighter;
+            color: black;
+        }
+        nav {
+            background-color: #ec5151;
+            border-top: solid black 1px;
+            border-bottom: solid black 1px;
+            display: flex;
+            align-items: center;
+        }
+        nav p {
+            text-align: center;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #A16E83;
+        }
+        footer {
+            background-color: #050301;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3em;
+            border-top: solid black 1px;
+        }
+        h1, h2, h3, h4,p {
+            font-family: 'McLaren', cursive;
+            color: black;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        h5{
+            font-family: 'McLaren', cursive;
+            color: white;
+            font-weight: bold;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .wrap {
+            float: right;
+        }
+        .circle {
+            border-radius: 50%;
+            display: inline-block;
+            position: left;
+        }
+        .circle img {
+            border-radius: 50%;
+            display: block;
+            border: 1px solid #fff;
+        }
+        .circle:after {
+            content: "";
+            display: block;
+            width: 10%;
+            height: 10%;
+            background: radial-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 100%);
+            border-radius: 30%;
+            top: 0; left: 0;
+        }
+        .red img {
+            display: block;
+            max-width: 230px;
+            max-height: 95px;
+            width: auto;
+            height: auto;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .bg {
+            background-image: url('宝宝/蜡笔壁纸.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div.transbox {
+          background-color: #ffffff;
+          opacity: 0.6;
+            border: 1px solid black;
+        }
+
+        div.transbox p {
+          margin: 4%;
+          font-weight: bold;
+          color: f75c03;
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 1;
+            backdrop-filter: blur(15px);
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url('宝宝/迪迦.jpg') no-repeat center center;
+            background-size: cover;
+            width: 300px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            display: none;
+        }
+        #popup2 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            padding:30px;
+            width: 300px;
+            height: 300px;
+            transform: translate(-50%, -50%);
+            background: url("宝宝/迪迦2.jpg") no-repeat center center;
+            background-size : auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            display: none;
+        }
+        
+        #popup h2,h5{
+            margin-top: 0;
+            color: white;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        #popup2 h2,h5{
+            margin-top: 0;
+            color: white;
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        #popup2-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #popup button {
+            margin: 40px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #popup button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>  <!-- The header of the website. -->
+        <figure>
+            <div class="circle">
+                <label class="red">
+                    <img src="宝宝/cute宝宝.jpg" width="50%">
+                </label>
+            </div>
+        </figure>
+        <h1 class="wrap">祝宝宝第16个生日快乐呀！！(´▽`ʃ♡ƪ)</h1>
+    </header>
+
+    <nav> <!-- navigation bar of the website. -->
+        <p><a href="index.html">至老婆</a></p>
+        <p><a href="2.html">咱家斐斐</a></p>
+        <p><a href="3.html">翻译</a></p>
+    </nav>
+
+    <div role="main" class="main"> <!-- main page content -->
+        
+        <div class="bg">
+            <div class="transbox">
+            <p>至昕雨：</p>
+            <p>好快呀好快呀 老婆迎来第十六个生日啦！ 也是咱们一起过的第二个生日， 首先先祝老婆生日快乐啊啊啊啊啊！ Muamuamuamuamuuuuuuuuamua（猛亲你一顿你也不能把我咋滴 嘿嘿嘿 开始有以后一起过生日的画面喽！） 呜呜呜， 我的烧烤..或者火锅！ 我的好吃的！ 我也想吃！ 呜呜呜呜， 啥时候咱能一起出去俺想在宝宝生日的时候和宝宝吃一天好吃哒， 平常也吃好吃的啦， 但是生日那几天必须全是好吃哒。 不好吃的俺可以帮宝宝吃完哦， 但是不能用不好吃的把我先喂饱让俺吃不下好吃的！</p>
+            <p>在过去的一年中和宝宝经历了好多事情呀， 酸甜苦辣咸都给咱经历过了呢， 这说明什么宝宝！咳咳..咳咳哼 说明！咱啊！ 得一辈子黏一起， 这可不是忽悠哈， 这是俺得到的一个真理！真理！不可推翻！ 不可推翻！！ 我要在小斐斐变成老婆婆的时候再扶着你戳你几下， hiahiahiahiahiaaaaaa 不可以免疫！ 讲真的， 我真心爱你马钰斐， 但是你也不可以欺负我， 呜呜呜呜， 虽然我也很大猪蹄子惹宝宝生气了很多次， 嘿嘿（尴尬又不失礼的笑） 俗话说得好， 打是情惹生气是爱～ 俺知道宝宝看完上一句在想什么：“所以你惹我生气来表达你的爱意吗！？ 意思你要老惹我生气来表达你爱我吗！？” nonononono 我不惹你生气也是爱！宝宝每次生气的时候我都很自责，不想看到宝宝生气不开心，所以每次生气后都会反省因为什么然后让自己不要再犯，有挺多没有再犯过，都说到做到了，但是有些犯过几次呜呜呜呜，那些都多加注意不让自己再犯了呜呜呜，我是大猪蹄子，反正不管啥就是爱你！哼！不管咋滴就是爱死你了！</p>
+            <p>真心谢谢宝宝在这一年的陪伴呀，很想宝宝可以继续一直陪我下去，因为宝宝，感觉自己成长了许多，发现了自己的许多不足并努力改变着，也更是因为和宝宝一起很幸福很开心，虽然也有难过不开心的时候，但是这就是生活呀，有美好的时候也有不美好的时候，但我只想和宝宝一起经历这些美好和不美好的时刻, 俺想并且也努力让美好的时刻超大于不美好的！PS：也想和余佳和未来的孩子们一起经历啦，余佳被遗忘了太久了呜呜呜呜，呃...嘿嘿她..应该..不会介意吧..嘿嘿, 余佳！你老爸俺没忘记你，是你妈妈不让我见你！（嘿嘿把锅丢给宝宝咯~ 宝宝快去跟余佳解释哦（黑月亮脸）） 宝宝你知道你最可爱的时候是什么时候嘛， 就是你戳我然后抓住我的手撒娇求饶着说不会了不会了， 结果你还给我来一下， 哼！ 大坏蛋！ 也是宝宝在梦梦赢了当mvp双手举高高特别开心的那一刻，（其实宝宝为了赢的那一刻，挂着一张写着“我要赢！”的认真脸开了一局又开一局也蛮可爱滴， 宝宝赢很重要， 但是睡觉休息更重要啦， 赢了就要马上秒入睡！）也还是宝宝在ml拿了人头， lord的那一下嘟嘴嘴摇头头， 也还是宝宝开心的时候冲着俺虎牙笑！！！！ 那一下到现在都真的还无法抗拒啊啊啊啊， 老婆坏蛋！ 老是能把我的心瞬间融化掉！ 但宝宝！还是！不给我！牵手！大！坏！蛋！ 以后不给我牵我打你屁屁！ 牵手手和摸腿之间必须要选一个， 嘿嘿 （我都要， 宝宝小屁孩才会选hiahiahia） PS：其实宝宝瑟瑟的时候也很可爱~ 嘻嘻~ 虽然咱们平常特腻歪还有些幼稚，（以至于宝宝的朋友在我们面前都看不下去） 但在过去了一年多的时间里， 感觉我们都成长了许多， 也更加得了解对方， 当然也更加爱对方啦，具体是哪方面的成长俺现在在写的时候暂时还想不起来啦，但就是回想以前或者看着以前的聊天记录的时候感觉我们都成长了许多。还是想说最近真的超级幸福，因为有宝宝，特别特别开心，宝宝是我的动力，也希望宝宝能一直当我的动力下去！宝宝 
+ 还是那句话，俺永远在这，有什么事，开心哒，伤心难过的，委屈的，重要的，不重要的，任何事都可以跟俺分享跟俺倾诉呢，我会永远站在宝宝这一边，支持宝宝！记住哦，宝宝你！就是最棒哒！也是最可爱最漂亮的啦~ 生日快乐我的小可爱！永远爱你</p>
+
+</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+        <script src="script.js"></script>
+
+        
+        <div id="overlay"></div>
+        <div id="popup">
+            <h2>斐斐公主生日快乐哦</h2>
+            <h5>请问斐斐接受礼物嘛！:</h5>
+            <button id="accept">接受</button>
+            <button id="decline">不接受</button>
+            <script src="script.js"></script>
+        </div>
+        
+        <div id="popup2">
+            <div id="popup2-content" class="center">
+                <h2>嘿嘿 宝宝接受啦</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <footer> <!-- footer of the website -->
+        <h5 class="center">&copy;2024 by宝宝家又爱又贱的老公~嘿嘿</h5> 
+    </footer>
+</body>
+</html>
