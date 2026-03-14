@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const targetDate = new Date('2023-02-16'); 
-    const currentDate = new Date();
-    const diffTime = Math.abs(currentDate - targetDate);
+    const startDate = new Date('2023-02-16'); 
+    const endDate = new Date('2025-07-07');
+    const diffTime = Math.abs(endDate - startDate);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
     document.getElementById('day-counter').innerText = `和宝宝一起腻歪了${diffDays}天耶！！`;
